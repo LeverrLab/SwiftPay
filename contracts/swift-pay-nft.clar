@@ -22,3 +22,6 @@
         (nft-burn? swift-pay-stream id (unwrap! (nft-get-owner? swift-pay-stream id) (err u101)))
     )
 )
+(define-read-only (get-last-token-id) (ok (var-get last-id)))
+(define-read-only (get-token-uri (id uint)) (ok none))
+(define-read-only (get-owner (id uint)) (ok (nft-get-owner? swift-pay-stream id)))
