@@ -33,3 +33,4 @@ export default function RootLayout({
   );
 }
 // SEO Metadata
+// Font loading strategy
