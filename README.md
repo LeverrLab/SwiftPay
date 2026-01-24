@@ -33,3 +33,4 @@ SwiftPay solves a fundamental problem in the Stacks ecosystem: **Liquidity for f
 Built with ❤️ for the next big thing on Stacks.## Current Status: Production Ready
 ## Current Status: Production Ready
 ## Project Status: Stacks Hackathon Version 1.0
+### Frontend Setup Info
