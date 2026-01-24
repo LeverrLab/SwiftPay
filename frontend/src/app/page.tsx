@@ -200,3 +200,4 @@ function LayoutDashboard(props: any) {
     </svg>
   );
 }
+// Font weight adjustments
