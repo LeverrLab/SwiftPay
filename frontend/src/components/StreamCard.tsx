@@ -120,3 +120,4 @@ export default function StreamCard({ stream }: { stream: StreamCardProps }) {
         </motion.div>
     );
 }
+// Precise math for timer
