@@ -1,0 +1,45 @@
+
+[project]
+name = 'SwiftPay'
+description = 'Real-time Payment Streaming Protocol'
+authors = []
+telemetry = false
+cache_dir = './.cache'
+requirements = []
+
+[contracts.sip-010-trait]
+path = 'contracts/sip-010-trait.clar'
+clarity_version = 2
+epoch = 'latest'
+
+[contracts.nft-trait]
+path = 'contracts/nft-trait.clar'
+clarity_version = 2
+epoch = 'latest'
+
+[contracts.swift-pay-nft]
+path = 'contracts/swift-pay-nft.clar'
+clarity_version = 2
+epoch = 'latest'
+depends_on = ['nft-trait']
+
+[contracts.swift-pay]
+path = 'contracts/swift-pay.clar'
+clarity_version = 2
+epoch = 'latest'
+depends_on = ['sip-010-trait', 'swift-pay-nft']
+
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.lints]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
