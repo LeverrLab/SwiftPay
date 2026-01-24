@@ -16,3 +16,5 @@
     stop-block: uint,
     is-cancelled: bool
 })
+(define-read-only (get-stream (stream-id uint)) (map-get? streams stream-id))
+(define-read-only (get-recipient (stream-id uint)) (contract-call? .swift-pay-nft get-owner stream-id))
