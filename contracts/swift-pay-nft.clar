@@ -16,3 +16,9 @@
         (nft-mint? swift-pay-stream id recipient)
     )
 )
+(define-public (burn (id uint))
+    (begin
+        (asserts! (is-eq contract-caller (var-get swift-pay-engine)) (err u100))
+        (nft-burn? swift-pay-stream id (unwrap! (nft-get-owner? swift-pay-stream id) (err u101)))
+    )
+)
