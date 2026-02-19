@@ -22,7 +22,7 @@ In a world of real-time work, why wait two weeks for a paycheck? SwiftPay enable
 SwiftPay comes with a comprehensive Vitest-based suite proving the security and accuracy of the streaming math.
 
 ```bash
-npm install
+npm install (i)
 npm test
 ```
 
